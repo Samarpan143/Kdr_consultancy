@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pawan Bhusal - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.jpg" alt="KDR Logo" class="logo-img" />
+          K.D.R Consultancy Pvt. Ltd.
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <button class="toggle-theme" id="toggle-theme">🌙</button>
+      </nav>
+    </header>
+
+    <main class="home-container">
+      <section class="intro">
+        <div class="intro-text">
+          <h1>Chartered Accountant Pawan Bhusal</h1>
+          <p>
+            Welcome to my professional portfolio. I am dedicated to providing
+            expert tax consulting, auditing, and company registration services
+            to help your business thrive.
+          </p>
+          <p>
+            Contact me for personalized financial solutions and reliable
+            consultancy services.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img src="images/pawan-bhusal.jpg" alt="Pawan Bhusal" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact: +9779847508342 | Email: bhusaldeependra@gmail.com</p>
+      <div class="social">
+        <a href="https://www.facebook.com/KDRconsultacypvtltd">Facebook</a>
+        <a
+          href="https://www.linkedin.com/in/k-d-r-consultancy-private-limited-b418a0271/"
+          >LinkedIn</a
+        >
+        <a href="https://www.instagram.com/kdr_consultancy_pvt_ltd/"
+          >Instagram</a
+        >
+      </div>
+      <p>© 2025 KDR Consultancy Pvt. Ltd. | Kathmandu, Nepal</p>
+    </footer>
+
+    <script>
+      // Theme toggle
+      const toggleBtn = document.getElementById("toggle-theme");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggleBtn.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+
+      // Mobile nav toggle
+      const navToggle = document.getElementById("nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

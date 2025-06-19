@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dark">
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.jpg" alt="KDR Logo" class="logo-img" />
+          K.D.R Consultancy Pvt. Ltd.
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <button class="toggle-theme" id="toggle-theme">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <h2 style="text-align: center; margin-top: 30px">Our Services</h2>
+      <div class="services-row">
+        <section class="service-section">
+          <div class="service-content">
+            <img
+              src="images/taxation.png"
+              alt="Taxation Service"
+              class="service-image"
+            />
+            <div class="service-text">
+              <h2>Taxation</h2>
+              <p>
+                We provide expert taxation services tailored to your business
+                and personal needs. From filing income tax returns to strategic
+                tax planning, our experienced professionals ensure compliance
+                and minimize liabilities.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-section">
+          <div class="service-content">
+            <img
+              src="images/counseling.png"
+              alt="Counseling Service"
+              class="service-image"
+            />
+            <div class="service-text">
+              <h2>Financial consulting</h2>
+              <p>
+                Our financial consulting service offers strategic advice on
+                budgeting, investment, risk management, and financial
+                restructuring. We empower businesses to make smart,
+                future-focused financial decisions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-section">
+          <div class="service-content">
+            <img
+              src="images/company-registration.jpg"
+              alt="Company Registration"
+              class="service-image"
+            />
+            <div class="service-text">
+              <h2>Company Registration</h2>
+              <p>
+                We make company registration simple and hassle-free. Whether
+                you're starting a private limited company or a partnership firm,
+                we handle documentation, legal compliance, and registration
+                procedures efficiently.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-section">
+          <div class="service-content">
+            <img
+              src="images/auditing.jpg"
+              alt="Auditing Service"
+              class="service-image"
+            />
+            <div class="service-text">
+              <h2>Auditing</h2>
+              <p>
+                We offer independent auditing services to help businesses
+                maintain accuracy, transparency, and legal compliance. Our audit
+                process strengthens internal controls and assures stakeholders
+                of financial integrity.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Contact: +9779847508342 | Email: bhusaldeependra@gmail.com</p>
+      <div class="social">
+        <a href="https://www.facebook.com/KDRconsultacypvtltd">Facebook</a>
+        <a
+          href="https://www.linkedin.com/in/k-d-r-consultancy-private-limited-b418a0271/"
+          >LinkedIn</a
+        >
+        <a href="https://www.instagram.com/kdr_consultancy_pvt_ltd/"
+          >Instagram</a
+        >
+      </div>
+      <p>&copy; 2025 Pawan Bhusal. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("toggle-theme");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggleBtn.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+      // Mobile nav toggle
+      const navToggle = document.getElementById("nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
